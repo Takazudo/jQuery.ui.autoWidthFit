@@ -16,7 +16,7 @@ html,body{
 #test-inner{
 	margin:0 -5px 0 -20px;
 }
-.item{
+.test-item{
 	width:180px;
 	padding:50px 0;
 	text-align:center;
@@ -29,11 +29,13 @@ html,body{
 /* for debug */
 #console{
 	position:fixed;
+	z-index:9999;
 	right:0;
 	top:0;
+	font-size:.7em;
 	background:#000;
-	background:rgba(0,0,0,.5);
 	color:#fff;
 	padding:.5em 1em;
 	line-height:1.5;
+	opacity:.5;
 }
