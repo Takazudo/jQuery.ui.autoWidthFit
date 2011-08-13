@@ -1,0 +1,39 @@
+html,body{
+	padding:0;
+	margin:0;
+	font-family:sans-serif;
+}
+.all{
+	padding:30px;
+	overflow:hidden;
+}
+#test{
+	margin:0 auto;
+	background:url(bg.png) 0 0;
+	overflow:hidden;
+	margin:0 auto;
+}
+#test-inner{
+	margin:0 -5px 0 -20px;
+}
+.item{
+	width:180px;
+	padding:50px 0;
+	text-align:center;
+	float:left;
+	font-size:2em;
+	margin:0 0 10px 20px;
+	background:rgba(0,0,0, .1);
+}
+
+/* for debug */
+#console{
+	position:fixed;
+	right:0;
+	top:0;
+	background:#000;
+	background:rgba(0,0,0,.5);
+	color:#fff;
+	padding:.5em 1em;
+	line-height:1.5;
+}

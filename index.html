@@ -1,0 +1,81 @@
+<!doctype html>
+<html class="no-js" lang="ja">
+<head>
+<meta charset="utf-8">
+<title></title>
+<link rel="stylesheet" href="style.css">
+<script src="jquery.min.js"></script>
+<script src="jquery.easing.1.3.js"></script>
+<script src="jquery.ui.widget.min.js"></script>
+<script src="jquery.ui.autoWidthFit.js"></script>
+<script src="debugthings.js"></script>
+<script>
+$(function(){
+	
+	var $test = $('#test');
+
+	$('#test').autoWidthFit({
+		widthchange: function(){
+			log('widthchange event fired.');
+		},
+		firstwidthchange: function(){
+			log('firstwidthchange event fired.');
+		}
+	});
+
+	/* followig event binding is supported too.
+	$('#test')
+		.bind('autowidthfit.widthchange', function(){
+			log('widthchange event fired.');
+		})
+		.bind('autowidthfit.firstwidthchange', function(){
+			log('firstwidthchange event fired.');
+		})
+		.autoWidthFit();
+	*/
+
+	/* following options are supported.
+	$('#test').autoWidthFit({
+		bodyMarginLeft: 30,  // left margin
+		bodyMarginRight: 30, // right margin
+		colWidth: 180,       // col width
+		colMargin: 20,       // col margin
+		widthChangeAnimationDuration: 400,         // duration
+		widthChangeAnimationEasing: 'easeOutExpo', // easing
+		animate: true
+	});
+	*/
+
+});
+</script>
+</head>
+<body><div class="all">
+
+<div id="test"><div id="test-inner">
+	<div class="item">ITEM</div>
+	<div class="item">ITEM</div>
+	<div class="item">ITEM</div>
+	<div class="item">ITEM</div>
+	<div class="item">ITEM</div>
+	<div class="item">ITEM</div>
+	<div class="item">ITEM</div>
+	<div class="item">ITEM</div>
+	<div class="item">ITEM</div>
+	<div class="item">ITEM</div>
+	<div class="item">ITEM</div>
+	<div class="item">ITEM</div>
+	<div class="item">ITEM</div>
+	<div class="item">ITEM</div>
+	<div class="item">ITEM</div>
+	<div class="item">ITEM</div>
+	<div class="item">ITEM</div>
+	<div class="item">ITEM</div>
+	<div class="item">ITEM</div>
+	<div class="item">ITEM</div>
+	<div class="item">ITEM</div>
+</div></div>
+
+<div id="console"></div>
+
+</div></body>
+</html>

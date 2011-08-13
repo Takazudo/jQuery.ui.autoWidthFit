@@ -1,0 +1,20 @@
+jQuery.ui.autoWidthFit is a element width adjuster.
+Imagine this works with masonry layout things like below plugin.
+http://isotope.metafizzy.co/
+works on jQuery 1.6.2.
+
+
+Usage:
+
+$('#test').autoWidthFit({
+	widthchange: function(){
+		log('widthchange event fired.');
+	},
+	firstwidthchange: function(){
+		log('firstwidthchange event fired.');
+	}
+});
+
+Demo:
+
+http://dl.dropbox.com/u/268240/gitHubDemos/jQuery.ui.autoWidthFit/index.html
