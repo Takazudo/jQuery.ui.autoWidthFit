@@ -2,8 +2,7 @@ jQuery.ui.autoWidthFit is a element width adjuster.
 See the demo below what this plugin can do.
 Imagine this works with masonry layout things like below plugin.
 http://isotope.metafizzy.co/
-works on jQuery 1.6.2.
-
+works on jQuery 1.6.2. IE6/7/8 supported too.
 
 Usage:
 
